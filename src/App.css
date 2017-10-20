@@ -1,0 +1,863 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 160px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+	background-color: #0c0c0c;
+}
+
+h2 {
+	height: 24px;
+}
+
+.App-Clock {
+	/*background-color: grey;*/
+	color: grey;
+}
+
+.Storage {
+	background-color: #b8b8b3;
+	min-height: 400px;
+	width: 300px;
+	margin: auto;
+}
+
+.StorageFilters {
+	text-align: left;
+}
+
+.StorageTableHeader {
+	width: 278px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #e0e0e0;
+}
+
+.StorageTableHeaderElement {
+	text-align: left;
+	width: 150px;
+	//display: flex;
+	//justify-content: space-between;
+}
+
+.StorageProduct {
+	display: flex;
+	justify-content: space-between;
+	height: 24px;
+	border-color: #b8b8b3;
+	border-style: solid;
+    border-width: 1px 0px 0px 0px;
+}
+
+table, th, td, tr, tbody, thead{
+    //border: 2px solid black;
+    border-collapse: collapse;
+	padding: 0px;
+}
+
+.StorageProductName {
+	text-align: left;
+	margin-top: auto;
+	width: 139px;
+	height: 24px;
+	background-color: white;
+}
+
+.StorageProductPrice {
+	text-align: left;
+	margin-top: auto;
+	width: 139px;
+	height: 24px;
+	background-color: white;
+}
+
+.StorageProductRemove {
+	width: 22px;
+	height: 24px;
+	background-color: white;
+}
+
+.StorageProductRemoveButton {
+	text-align: right;
+	width: 22px;
+	height: 24px;
+	background-color: #c02000;
+	color: white;
+	border: none;
+}
+
+.StorageProductRemoveButton:hover {
+	background-color: red;
+}
+
+.list-text {
+	padding: 4px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.list-text-out-of-stock {
+	padding: 4px;
+	vertical-align: middle;
+	display: inline-block;
+	color: red;
+}
+
+.ProductTableHeader, .ProductTableHeader-current {
+	width: 24px;
+	height: 24px;
+	background-color: #008cba;
+	color: black;
+	border: none;
+	margin-right: 2px;
+}
+
+.ProductTableHeader-current {
+	background-color: #4caf50;
+}
+
+.formError {
+	color: red;
+	font-size: 12px;
+	margin: auto;
+}
+
+/*------------------------------*/
+
+.SpaceCenter {
+	margin: auto;
+	height: 100%;
+	width: 100%;
+	min-width: 1024px;
+	min-height: 512px;
+	background-color: #0c0c0c;
+}
+
+.Header {
+	height: 20px;
+	width: 100%;
+	background-color: #1b1b1b;
+	flex-direction: row;
+	display: flex;
+}
+
+.Header_title, .Header_right, .Header_left {
+	height: 18px;
+	color: grey;
+	font-size: 12px;
+	margin: 0;
+}
+
+.Header_title {
+	flex: 0.6;
+	margin-top: 4px;
+	font-variant: small-caps;
+}
+
+.Header_right {
+	float: right;
+	flex: 0.2;
+	margin-top: 4px;
+	margin-right: 4px;
+	text-align: right;
+}
+
+.Header_left {
+	float: left;
+	flex: 0.2;
+	margin-top: 2px;
+	margin-left: 4px;
+	text-align: left;
+	font-variant: small-caps;
+}
+
+.MiddleLine {
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	top: 220px;
+	background-color: #1b1b1b;
+}
+
+.Interface {
+	position: absolute;
+	margin: 0px;
+	padding: 0;
+	top: 0px;
+	height: 400px;
+	width: 100%;
+	background-color: #0c0c0c;
+	z-index: 10;
+	/*background-color: black;*/
+}
+
+.InterfaceConnection {
+	width: 100%;
+	height: 0px;
+	/*background-color: black;*/
+	position: absolute;
+	top: 0px;
+}
+
+.Interface_MenuBtn_0, .Interface_MenuBtn_1, .Interface_MenuBtn_2 {
+	height: 40px;
+	width: 200px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+.Interface_MenuBtn_0 {
+	top: 360px;
+}
+
+.Interface_MenuBtn_1 {
+	top: 410px;
+}
+
+.Interface_MenuBtn_2 {
+	top: 460px;
+}
+
+.TitleImgBig {
+	height: 360px;
+	width: 692px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 1;
+}
+
+.WinnerText {
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	font-style: strong;
+	margin: auto;
+	margin-top: 50px;
+	font-variant: small-caps;
+}
+
+.Interface_sub {
+	margin: 4px;
+	margin-top: 0px;
+}
+
+.InterfaceBlue {
+	margin: 2px;
+	margin-top: 1px;
+	margin-right: 3px;
+	width: 48%;
+	display: inline-block;
+	border: 1px solid blue;
+	padding: 0;
+	height: 344px;
+	background-color: black;
+}
+
+.InterfaceRed {
+	margin: 2px;
+	margin-top: 1px;
+	margin-left: 3px;
+	width: 48%;
+	display: inline-block;
+	border: 1px solid red;
+	padding: 0;
+	height: 344px;
+	background-color: black;
+}
+
+table {
+	width: 100%;
+	display: table;
+	border-collapse: collapse;
+}
+
+td {
+	color: white;
+	text-align: left;
+	width: 33%;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+.Space {
+	margin: auto;
+	height: 400px;
+	width: 100%;
+	display: inline-block;
+	/*background-color: black;*/
+	background-image: url(img/background_low.jpg);
+	background-size: 1024px 1024px;
+	-webkit-animation: background_anim 120s linear 0s infinite alternate;
+	-moz-animation: background_anim 120s linear 0s infinite alternate;
+	-ms-animation: background_anim 120s linear 0s infinite alternate;
+	-o-animation: background_anim 120s linear 0s infinite alternate;
+	animation: background_anim 120s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes background_anim {
+	from { background-position: 0px; }
+	to { background-position: -1024px; }
+}
+
+@-moz-keyframes background_anim {
+	from { background-position: 0px; }
+	to { background-position: -1024px; }
+}
+
+@-ms-keyframes background_anim {
+	from { background-position: 0px; }
+	to { background-position: -1024px; }
+}
+
+@-o-keyframes background_anim {
+	from { background-position: 0px; }
+	to { background-position: -1024px; }
+}
+
+@keyframes background_anim {
+	from { background-position: px; }
+	to { background-position: -1024px; }
+}
+
+.BattleSpace {
+	position: relative;
+	/*background-color: grey;*/
+	height: 130px;
+	margin-left: 190px;
+	margin-right: 190px;
+	top: 135px;
+}
+
+.OpenSpace {
+	z-index: 2;
+	/*background-color: grey;*/
+	height: 160px;
+	margin-right: 180px;
+	margin-left: 180px;
+	position: relative;
+	top: -10px;
+}
+
+.SpaceAreaBlue {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    height: 154px;
+    border: 0;
+    border-top: 3px dashed blue;
+	border-bottom: 3px dashed blue;
+	width: 50%;
+    padding: 0;
+}
+
+.SpaceAreaRed {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+    height: 154px;
+    border: 0;
+    border-top: 3px dashed #ab0000;
+	border-bottom: 3px dashed #ab0000;
+	width: 50%;
+    padding: 0;
+}
+
+.SpaceBorderMiddle {
+	height: 140px;
+	width: 2px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	border: 0;
+	padding: 0;
+	background-color: #2e2e2e;
+}
+
+.SpaceBorder {
+	height: 140px;
+	width: 2px;
+	position: absolute;
+	top: 10px;
+	left: 0%;
+	border: 0;
+	padding: 0;
+	border-left: 2px solid #0c096e;
+	border-right: 2px solid #4f0000;
+}
+
+.BorderText {
+	position: absolute;
+	text-align: center;
+	color: white;
+	width: 50px;
+	left: -25px;
+	top: -35px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.SpaceGroup {
+	position: relative;
+	top: -290px;
+}
+
+.Earth {
+	float: left;
+	height: 400px;
+	width: 200px;
+	background-image: url(img/earth.png);
+    background-repeat: no-repeat;
+}
+
+.Mars {
+	float: right;
+	height: 400px;
+	width: 200px;
+	background-image: url(img/mars.png);
+    background-repeat: no-repeat;
+}
+
+.Centerer {
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.AsteroidFlag {
+	position: absolute;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	width: 7px;
+	height: 9px;
+	bottom: 3px;
+	right: 7px;
+}
+
+.Asteroid {
+	position: absolute;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	width: 34px;
+	height: 34px;
+	-ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.AsteroidImg {
+	position: relative;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	width: 34px;
+	height: 34px;
+}
+
+.AsteroidText {
+	position: absolute;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 10px;
+	color: #4a4a4a;
+	top: 30px;
+	width: 100%;
+}
+
+.Ship_Cruiser_blue {
+	z-index: 5;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	top: 50%;
+	left: 0%;
+	-ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.Ship_Cruiser_red {
+	z-index: 5;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	top: 50%;
+	left: 100%;
+	-ms-transform: translate(-50%, -50%) scaleX(-1);
+    -webkit-transform: translate(-50%, -50%) scaleX(-1);
+	transform: translate(-50%, -50%) scaleX(-1);
+}
+
+.Ship_Harvester_blue {
+	z-index: 5;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	top: 50%;
+	left: 0%;
+	width: 22px;
+	height: 12px;
+	-ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.Ship_Harvester_blue_reversed {
+	z-index: 5;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	top: 50%;
+	left: 0%;
+	width: 22px;
+	height: 12px;
+	-ms-transform: translate(-50%, -50%) scaleX(-1);
+    -webkit-transform: translate(-50%, -50%) scaleX(-1);
+	transform: translate(-50%, -50%) scaleX(-1);
+}
+
+.Ship_Harvester_red {
+	z-index: 5;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	top: 50%;
+	left: 100%;
+	width: 22px;
+	height: 12px;
+	-ms-transform: translate(-50%, -50%) scaleX(-1);
+    -webkit-transform: translate(-50%, -50%) scaleX(-1);
+	transform: translate(-50%, -50%) scaleX(-1);
+}
+
+.Ship_Harvester_red_reversed {
+	z-index: 5;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	top: 50%;
+	left: 100%;
+	width: 22px;
+	height: 12px;
+	-ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.Ship_Cargo {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	position: absolute;
+	height: 8px;
+	width: 14px;
+	left: 6px;
+	top: 6px;
+}
+
+@-moz-document url-prefix() { 
+  .Ship_Cargo{
+    position:absolute;
+    left: 6px;
+    top: 8px;
+  }
+}
+
+.Ship_HealthBar {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	position: absolute;
+	height: 3px;
+	width: 22px;
+	left: 12px;
+	top: 6px;
+}
+
+.Ship_Cannon {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	position: absolute;
+	height: 5px;
+	width: 6px;
+	left: 43px;
+	top: 5px;
+}
+
+.Ship_Cruiser_Thruster {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	position: absolute;
+	height: 16px;
+	width: 5px;
+	left: 1px;
+	top: 0px;
+	
+	-webkit-animation: thruster .05s linear 0s infinite;
+	-moz-animation: thruster .05s linear 0s infinite;
+	-ms-animation: thruster .05s linear 0s infinite;
+	-o-animation: thruster .05s linear 0s infinite;
+	animation: thruster .05s linear 0s infinite;
+}
+
+.Ship_Harvester_Thruster {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	position: absolute;
+	height: 12px;
+	width: 6px;
+	left: -2px;
+	top: 2px;
+	
+	-webkit-animation: thruster .05s linear 0s infinite;
+	-moz-animation: thruster .05s linear 0s infinite;
+	-ms-animation: thruster .05s linear 0s infinite;
+	-o-animation: thruster .05s linear 0s infinite;
+	animation: thruster .05s linear 0s infinite;
+}
+
+@-moz-document url-prefix() { 
+  .Ship_Harvester_Thruster{
+    position:absolute;
+	top: 4px;
+  }
+}
+
+@-webkit-keyframes thruster {
+	0%   {opacity: 1;}
+	40%   {opacity: 1;}
+	100%   {opacity: 0.2;}
+}
+
+@-moz-keyframes thruster {
+	0%   {opacity: 1;}
+	40%   {opacity: 1;}
+	100%   {opacity: 0.2;}
+}
+
+@-ms-keyframes thruster {
+	0%   {opacity: 1;}
+	40%   {opacity: 1;}
+	100%   {opacity: 0.2;}
+}
+
+@-o-keyframes thruster {
+	0%   {opacity: 1;}
+	40%   {opacity: 1;}
+	100%   {opacity: 0.2;}
+}
+
+@keyframes thruster {
+	0%   {opacity: 1;}
+	40%   {opacity: 1;}
+	100%   {opacity: 0.2;}
+}
+
+.laser_blue {
+	z-index: 4;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background-color: cyan;
+	width: 2px;
+	opacity: 0;
+	
+	-webkit-animation: laserFade 1s ease-out 0s 1;
+	-moz-animation: laserFade 1s ease-out 0s 1;
+	-ms-animation: laserFade 1s ease-out 0s 1;
+	-o-animation: laserFade 1s ease-out 0s 1;
+	animation: laserFade 1s ease-out 0s 1;
+}
+
+.laser_red {
+	z-index: 4;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background-color: red;
+	width: 2px;
+	opacity: 0;
+	
+	-webkit-animation: laserFade 1s ease-out 0s 1;
+	-moz-animation: laserFade 1s ease-out 0s 1;
+	-ms-animation: laserFade 1s ease-out 0s 1;
+	-o-animation: laserFade 1s ease-out 0s 1;
+	animation: laserFade 1s ease-out 0s 1;
+}
+
+@-webkit-keyframes laserFade {
+	0%   {opacity: 1;}
+	100%   {opacity: 0;}
+}
+
+@-moz-keyframes laserFade {
+	0%   {opacity: 1;}
+	100%   {opacity: 0;}
+}
+
+@-ms-keyframes laserFade {
+	0%   {opacity: 1;}
+	100%   {opacity: 0;}
+}
+
+@-o-keyframes laserFade {
+	0%   {opacity: 1;}
+	100%   {opacity: 0;}
+}
+
+@keyframes laserFade {
+	0%   {opacity: 1;}
+	100%   {opacity: 0;}
+}
+
+.CruiserFiring {
+	height: 21px;
+	width: 30px;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	top: -2px;
+	right: -2px;
+	background-image: url("img/cruiser_firing_sheet.png");
+	-webkit-animation: cruiserFiring_anim .7s steps(17) infinite;
+	-moz-animation: cruiserFiring_anim .7s steps(17) infinite;
+	-ms-animation: cruiserFiring_anim .7s steps(17) infinite;
+	-o-animation: cruiserFiring_anim .7s steps(17) infinite;
+	animation: cruiserFiring_anim .7s steps(17) infinite;
+}
+
+@-webkit-keyframes cruiserFiring_anim {
+   from { background-position:    0px; }
+     to { background-position: -510px; }
+}
+
+@-moz-keyframes cruiserFiring_anim {
+   from { background-position:    0px; }
+     to { background-position: -510px; }
+}
+
+@-ms-keyframes cruiserFiring_anim {
+   from { background-position:    0px; }
+     to { background-position: -510px; }
+}
+
+@-o-keyframes cruiserFiring_anim {
+   from { background-position:    0px; }
+     to { background-position: -510px; }
+}
+
+@keyframes cruiserFiring_anim {
+   from { background-position:    0px; }
+     to { background-position: -510px; }
+}
+
+.explosionA {
+	/*68.56 / 100*/
+	height: 100px;
+	width: 69px;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	top: 50%;
+	left: 0%;
+	-ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-image: url("img/explosion_a_sheet.png");
+
+	-webkit-animation: explosionA_anim .7s steps(19) 1;
+	-moz-animation: explosionA_anim .7s steps(19) 1;
+	-ms-animation: explosionA_anim .7s steps(19) 1;
+	-o-animation: explosionA_anim .7s steps(19) 1;
+	animation: explosionA_anim .7s steps(19) 1;
+}
+
+@-webkit-keyframes explosionA_anim {
+   from { background-position:    0px; }
+     to { background-position: -1311px; }
+}
+
+@-moz-keyframes explosionA_anim {
+   from { background-position:    0px; }
+     to { background-position: -1311px; }
+}
+
+@-ms-keyframes explosionA_anim {
+   from { background-position:    0px; }
+     to { background-position: -1311px; }
+}
+
+@-o-keyframes explosionA_anim {
+   from { background-position:    0px; }
+     to { background-position: -1311px; }
+}
+
+@keyframes explosionA_anim {
+   from { background-position:    0px; }
+     to { background-position: -1311px; }
+}
+
+.version {
+	color: grey;
+	font-size: 10px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
