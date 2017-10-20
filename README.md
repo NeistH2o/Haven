@@ -1,3 +1,4 @@
+![haven](http://h2o-game.net/haven/Title_big.jpg)
 # Project Haven
 
 Current official version [here](http://h2o-game.net/haven/index.html)
